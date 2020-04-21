@@ -31,6 +31,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
     implementation(Libraries.Core.kotlinStdlib)
     implementation(Libraries.AndroidX.appCompat)
     implementation(Libraries.AndroidX.core)
