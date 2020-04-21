@@ -31,5 +31,6 @@ android {
 
 dependencies {
     implementation(Libraries.Core.kotlinStdlib)
-    implementation(Libraries.AndroidX.Lifecycle.liveData)
+    api(Libraries.AndroidX.Lifecycle.liveData)
+    api(Libraries.ThirdParty.liveEvent)
 }

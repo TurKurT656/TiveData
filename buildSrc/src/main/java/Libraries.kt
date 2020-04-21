@@ -35,5 +35,13 @@ object Libraries {
 
     }
 
+    object ThirdParty {
+
+        private const val LIVE_EVENT_VERSION = "1.2.0"
+
+        const val liveEvent = "com.github.hadilq.liveevent:liveevent:$LIVE_EVENT_VERSION"
+
+    }
+
 
 }
