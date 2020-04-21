@@ -1,19 +1,19 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
-    kotlin("android.extensions")
+    id(Plugins.Android.application)
+    kotlin(Plugins.Kotlin.android)
+    kotlin(Plugins.Kotlin.androidExtensions)
 }
 
 android {
-    compileSdkVersion(29)
-    buildToolsVersion = "29.0.3"
+    compileSdkVersion(Config.compileSdkVersion)
+    buildToolsVersion = Config.buildToolsVersion
 
     defaultConfig {
-        applicationId = "io.omido.tivedata"
-        minSdkVersion(14)
-        targetSdkVersion(29)
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = Config.applicationId
+        minSdkVersion(Config.minSdkVersion)
+        targetSdkVersion(Config.targetSdkVersion)
+        versionCode = Config.versionCode
+        versionName = Config.versionName
     }
 
     buildTypes {
@@ -29,7 +29,7 @@ android {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72")
-    implementation("androidx.appcompat:appcompat:1.1.0")
-    implementation("androidx.core:core-ktx:1.2.0")
+    implementation(Libraries.Core.kotlinStdlib)
+    implementation(Libraries.AndroidX.appCompat)
+    implementation(Libraries.AndroidX.core)
 }
