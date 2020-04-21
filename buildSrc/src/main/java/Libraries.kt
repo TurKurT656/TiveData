@@ -25,6 +25,14 @@ object Libraries {
         const val core = "androidx.core:core-ktx:$CORE_VERSION"
         const val appCompat = "androidx.appcompat:appcompat:$APPCOMPAT_VERSION"
 
+        object Lifecycle {
+
+            private const val LIFECYCLE_VERSION = "2.2.0"
+
+            const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:$LIFECYCLE_VERSION"
+
+        }
+
     }
 
 
