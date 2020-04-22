@@ -44,5 +44,8 @@ dependencies {
     implementation(Libraries.AndroidX.Navigation.navigationFragment)
     implementation(Libraries.AndroidX.Navigation.navigationUI)
     implementation(Libraries.UI.materialComponents)
+    implementation(Libraries.DI.koinCore)
+    implementation(Libraries.DI.koinAndroid)
+    implementation(Libraries.DI.koinViewModel)
     implementation(Libraries.ThirdParty.timber)
 }

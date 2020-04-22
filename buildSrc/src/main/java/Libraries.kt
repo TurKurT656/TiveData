@@ -58,6 +58,16 @@ object Libraries {
 
     }
 
+    object DI {
+
+        private const val KOIN_VERSION = "2.1.5"
+
+        const val koinCore = "org.koin:koin-core:$KOIN_VERSION"
+        const val koinAndroid = "org.koin:koin-android:$KOIN_VERSION"
+        const val koinViewModel = "org.koin:koin-androidx-viewmodel:$KOIN_VERSION"
+
+    }
+
     object ThirdParty {
 
         private const val LIVE_EVENT_VERSION = "1.2.0"
