@@ -1,2 +1,2 @@
 rootProject.name = "TiveData"
-include(":app")
+include(":app", ":core")

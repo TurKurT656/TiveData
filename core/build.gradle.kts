@@ -1,5 +1,5 @@
 plugins {
-    id(Plugins.Android.application)
+    id(Plugins.Android.library)
     kotlin(Plugins.Kotlin.android)
     kotlin(Plugins.Kotlin.androidExtensions)
 }
@@ -9,11 +9,12 @@ android {
     buildToolsVersion = Config.buildToolsVersion
 
     defaultConfig {
-        applicationId = Config.applicationId
         minSdkVersion(Config.minSdkVersion)
         targetSdkVersion(Config.targetSdkVersion)
         versionCode = Config.versionCode
         versionName = Config.versionName
+
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -31,8 +32,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":core"))
     implementation(Libraries.Core.kotlinStdlib)
-    implementation(Libraries.AndroidX.appCompat)
-    implementation(Libraries.AndroidX.core)
+    api(Libraries.AndroidX.Lifecycle.liveData)
+    api(Libraries.ThirdParty.liveEvent)
 }

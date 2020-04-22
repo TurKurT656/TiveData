@@ -25,6 +25,22 @@ object Libraries {
         const val core = "androidx.core:core-ktx:$CORE_VERSION"
         const val appCompat = "androidx.appcompat:appcompat:$APPCOMPAT_VERSION"
 
+        object Lifecycle {
+
+            private const val LIFECYCLE_VERSION = "2.2.0"
+
+            const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:$LIFECYCLE_VERSION"
+
+        }
+
+    }
+
+    object ThirdParty {
+
+        private const val LIVE_EVENT_VERSION = "1.2.0"
+
+        const val liveEvent = "com.github.hadilq.liveevent:liveevent:$LIVE_EVENT_VERSION"
+
     }
 
 
