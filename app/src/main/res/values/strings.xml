@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TiveData</string>
+    <string name="application_not_found">Application not found!</string>
 </resources>
