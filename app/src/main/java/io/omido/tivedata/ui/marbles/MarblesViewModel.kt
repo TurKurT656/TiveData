@@ -5,7 +5,7 @@ import io.omido.tivedata.base.BaseViewModel
 class MarblesViewModel : BaseViewModel() {
 
     fun onCreatingClicked() {
-
+        navigateTo(MarblesFragmentDirections.actionMarblesToCreating())
     }
 
 }
