@@ -21,25 +21,62 @@ object Libraries {
 
         private const val CORE_VERSION = "1.2.0"
         private const val APPCOMPAT_VERSION = "1.1.0"
+        private const val CONSTRAINT_LAYOUT_VERSION = "2.0.0-beta4"
 
         const val core = "androidx.core:core-ktx:$CORE_VERSION"
         const val appCompat = "androidx.appcompat:appcompat:$APPCOMPAT_VERSION"
+        const val constraintLayout =
+            "androidx.constraintlayout:constraintlayout:$CONSTRAINT_LAYOUT_VERSION"
 
         object Lifecycle {
 
             private const val LIFECYCLE_VERSION = "2.2.0"
 
             const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:$LIFECYCLE_VERSION"
+            const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$LIFECYCLE_VERSION"
 
         }
+
+        object Navigation {
+
+            private const val NAVIGATION_VERSION = "2.3.0-alpha05"
+
+            const val navigationFragment =
+                "androidx.navigation:navigation-fragment-ktx:$NAVIGATION_VERSION"
+            const val navigationUI =
+                "androidx.navigation:navigation-ui-ktx:$NAVIGATION_VERSION"
+            const val navigationPlugin =
+                "androidx.navigation:navigation-safe-args-gradle-plugin:$NAVIGATION_VERSION"
+
+        }
+
+    }
+
+    object UI {
+
+        private const val MATERIAL_VERSION = "1.2.0-alpha06"
+
+        const val materialComponents = "com.google.android.material:material:$MATERIAL_VERSION"
+
+    }
+
+    object DI {
+
+        private const val KOIN_VERSION = "2.1.5"
+
+        const val koinCore = "org.koin:koin-core:$KOIN_VERSION"
+        const val koinAndroid = "org.koin:koin-android:$KOIN_VERSION"
+        const val koinViewModel = "org.koin:koin-androidx-viewmodel:$KOIN_VERSION"
 
     }
 
     object ThirdParty {
 
         private const val LIVE_EVENT_VERSION = "1.2.0"
+        private const val TIMBER_VERSION = "4.7.1"
 
         const val liveEvent = "com.github.hadilq.liveevent:liveevent:$LIVE_EVENT_VERSION"
+        const val timber = "com.jakewharton.timber:timber:$TIMBER_VERSION"
 
     }
 

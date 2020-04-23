@@ -11,7 +11,12 @@ object Plugins {
 
         const val android = "android"
         const val androidExtensions = "android.extensions"
+        const val kapt = "kapt"
 
+    }
+
+    object ThirdParty {
+        const val safeArgs = "androidx.navigation.safeargs.kotlin"
     }
 
 }

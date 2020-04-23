@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="io.omido.tivedata.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_marbles"
+            app:destination="@id/marbles" />
+    </fragment>
+    <fragment
+        android:id="@+id/marbles"
+        android:name="io.omido.tivedata.ui.marbles.MarblesFragment"
+        android:label="@string/marbles"
+        tools:layout="@layout/fragment_marbles" >
+        <action
+            android:id="@+id/action_marbles_to_creating"
+            app:destination="@id/creating" />
+    </fragment>
+    <fragment
+        android:id="@+id/creating"
+        android:name="io.omido.tivedata.ui.marbles.creating.MarblesCreatingFragment"
+        android:label="@string/creating"
+        tools:layout="@layout/fragment_marbles_creating" />
+</navigation>
