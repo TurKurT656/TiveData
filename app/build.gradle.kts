@@ -2,6 +2,8 @@ plugins {
     id(Plugins.Android.application)
     kotlin(Plugins.Kotlin.android)
     kotlin(Plugins.Kotlin.androidExtensions)
+    kotlin(Plugins.Kotlin.kapt)
+    id(Plugins.ThirdParty.safeArgs)
 }
 
 android {
