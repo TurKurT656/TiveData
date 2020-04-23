@@ -20,6 +20,14 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding> : Fragment
 
     open var binding: DB? = null
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        initNavigator()
+        initActions()
+        bindObservables()
+        oneTimeEvent()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,15 +35,7 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding> : Fragment
         super.onCreateView(inflater, container, savedInstanceState)
         init(inflater, container)
         initBinding()
-        bindObservables()
-        initNavigator()
-        initActions()
         return binding?.root ?: View(context)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        oneTimeEvent()
     }
 
     private fun initNavigator() {
