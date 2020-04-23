@@ -6,6 +6,7 @@ buildscript {
     dependencies {
         classpath(Libraries.Gradle.androidGradlePlugin)
         classpath(Libraries.Gradle.kotlinGradlePlugin)
+        classpath(Libraries.AndroidX.Navigation.navigationPlugin)
     }
 }
 

@@ -12,7 +12,7 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
     override fun initBinding() {
         binding?.apply {
-            lifecycleOwner = this@HomeFragment
+            lifecycleOwner = viewLifecycleOwner
             vm = viewModel
             executePendingBindings()
         }
